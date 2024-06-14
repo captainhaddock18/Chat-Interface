@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Home Container */
+.home__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5; /* Light background */
+}
+
+.home__container > * {
+  margin-bottom: 10px;
+}
+
+.home__header {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.username__input {
+  padding: 10px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.home__cta {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White text */
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home__cta:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Chat Container */
+.chat {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.chat__sidebar {
+  height: 100%;
+  background-color: #fff;
+  flex: 0.2;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.chat__main {
+  height: 100%;
+  flex: 0.8;
+  background-color: #f0f2f5;
+}
+
+.chat__header {
+  margin: 30px 0 20px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.chat__users > * {
+  margin-bottom: 10px;
+  color: #007bff; /* Blue text */
+  font-size: 14px;
+}
+
+.online__users > * {
+  margin-bottom: 10px;
+  color: #ff4757; /* Red color */
+  font-style: italic;
+}
+
+.chat__mainHeader {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.leaveChat__btn {
+  padding: 10px;
+  width: 150px;
+  border: none;
+  outline: none;
+  background-color: #ff4757; /* Red color */
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.leaveChat__btn:hover {
+  background-color: #e74c3c; /* Darker red on hover */
+}
+
+.message__container {
+  width: 100%;
+  height: 80vh;
+  background-color: #fff;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.message__container > * {
+  margin-bottom: 10px;
+}
+
+/* Chat Footer */
+/* .chat__footer {
+  padding: 10px;
+  background-color: #fff;
+  height: 10vh;
+  border-top: 1px solid #ddd;
+} */
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.message {
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  padding: 15px;
+}
+
+.sendBtn {
+  width: 150px;
+  background-color: #28a745; /* Green color */
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sendBtn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.message__recipient {
+  background-color: #f1f1f1; /* Light grey background */
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #333; /* Dark text */
+}
+
+.message__sender {
+  background-color: #e9f7ef; /* Light green background */
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  font-size: 15px;
+  color: #333; /* Dark text */
+}
+
+.message__chats > p {
+  font-size: 13px;
+  color: #555; /* Grey text */
+}
+
+.sender__name {
+  text-align: right;
+  color: #007bff; /* Blue text */
+}
+
+.message__status {
+  position: fixed;
+  bottom: 50px;
+  font-size: 13px;
+  font-style: italic;
+  color: #777; /* Grey text */
+}
+.chat__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.input-bar {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-bar::placeholder {
+  color: #999;
+}
+
+.input-bar:focus {
+  border-color: #007bff;
+}
+
+.Submit-bar {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Submit-bar:hover {
+  background-color: #0056b3;
+}
